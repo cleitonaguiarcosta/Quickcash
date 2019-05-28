@@ -4,6 +4,38 @@
 	box-sizing: border-box;
 	text-decoration: none;
 }
+header{
+	width:100%;
+	display:flex;
+	justify-content:space-between;
+}
+nav{
+	width:30%;
+	display:flex;
+	margin:0 0 0 40px;
+
+}
+.header__title{
+	color:#0083CA;
+}
+.navlink{
+	color:#EE3325; 
+}
+.imagen{
+	height:100vh;
+	background-size:cover;
+	background-image:url(assets/mlh.jpg); 
+}
+.text{
+	width:35vw;
+	color:white;
+	display:flex;
+	align-items:center;
+}
+.textimage{
+	font-size:60px;
+	margin-top:100px;
+}
 .agency{
 	display: flex;
 	justify-content: space-around;
