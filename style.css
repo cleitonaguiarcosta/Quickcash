@@ -39,19 +39,26 @@ img{
 }
 .imagen{
 	height:100vh;
-	padding:220px 0 0 70px;
 	background-size:cover;
 	background-image:url(assets/mlh.jpg); 
+	padding-top: 200px; 
 	
 }
 .text{
-	width:30vw;
+	width:20vw;
 	color:white;
-	display:flex;	
-	align-items:center;
+	display:flex;
+	margin-left: 7%;
 }
+/*.div__lineargradiente{
+	width:100%;
+	height:45vh;
+	bottom: 200px;
+	background-image: linear-gradient(to bottom, rgba(0,131,202,0), rgba(0,131,202	,1));
+	position:static;
+}*/
 .textimage{
-	font-size:50px;
+	font-size:40px;
 }
 @media(max-width: 1024px){     
 	.imagen{
@@ -64,28 +71,35 @@ img{
 @media(max-width: 985px){
 	.imagen{
 		height:60vh;
+		padding-bottom:40px;
 	}
 	.text{
-		width:37vw;
+		width:30vw;
 
 	}
 	..textimage{
 		font-size:30px;
+		padding-bottom:
 	}
 }
 @media(max-width: 848px){
 	.imagen{
 		height:50vw;
 		padding-left:30px
+
 	}
 	.text{                      
-		width:35vw;
+		width:41vw;
 		/*padding:170px 130px 0  0;*/
 		
 		 }
 	.textimage{
 		font-size:40px;
+		padding-bottom:40px;
 	}
+}
+@media(max-width: 768px){
+
 }
 .menu{
 	display: none;
