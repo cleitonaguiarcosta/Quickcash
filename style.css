@@ -4,62 +4,98 @@
 	box-sizing: border-box;
 	text-decoration: none;
 }
-header{
+
+.header{
 	width:100%;
 	display:flex;
 	justify-content:space-between;
+
+}
+.Quickcash{
+	margin-left:60px;
+	display:flex;
 }
 nav{
 	width:30%;
+	padding:10px;
 	display:flex;
+	justify-content:space-between;
 	margin:0 0 0 40px;
-
 }
 .header__title{
 	color:#0083CA;
+	font-family:Montserrat, Bold
+}
+img{
+	height:30px;
 }
 .navlink{
 	color:#EE3325; 
 }
+@media (max-width: 768px){
+	nav{
+		display: none;
+	}
+}
 .imagen{
 	height:100vh;
+	padding:220px 0 0 70px;
 	background-size:cover;
 	background-image:url(assets/mlh.jpg); 
+	
 }
 .text{
-	width:35vw;
+	width:30vw;
 	color:white;
-	display:flex;
+	display:flex;	
 	align-items:center;
 }
 .textimage{
-	font-size:60px;
-	margin-top:100px;
+	font-size:50px;
 }
-.agency{
-	display: flex;
-	justify-content: space-around;
-	padding: 50px 0 50px 0; 
-	background-color: #F8F8F8;
+@media(max-width: 1024px){     
+	.imagen{
+		height:70vh;
+	}
+	.text{
+		width:36vw;
+	}
+ }
+@media(max-width: 985px){
+	.imagen{
+		height:60vh;
+	}
+	.text{
+		width:37vw;
+
+	}
+	..textimage{
+		font-size:30px;
+	}
 }
-@media screen and (max-width: 768px){
-		.agency{
-			flex-wrap: wrap;
-		}
+@media(max-width: 848px){
+	.imagen{
+		height:50vw;
+		padding-left:30px
+	}
+	.text{                      
+		width:35vw;
+		/*padding:170px 130px 0  0;*/
+		
+		 }
+	.textimage{
+		font-size:40px;
+	}
 }
-.agency__title{
-	width:350px;
-	font-size:35px;
-	font-weight: bold;
-	color:#EE3325;
-	font-family:'Montserrat', sans-serif;
+.menu{
+	display: none;
 }
-.agency__form{
-	width: 200px;
-	color:#6B6B6B;
-}
-.agency__label{
-	font-size: 17px;
-	font-weight:bold;
-	font-family: 'Montserrat', sans-serif;
+@media (max-width: 768px){
+	.menu {
+		color:red;
+		display: block;
+		font-family: Montserrat, ExtraLight;
+		padding-right:40px;
+		font-size:30px;
+	}
 }
